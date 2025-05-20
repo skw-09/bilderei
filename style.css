@@ -143,3 +143,10 @@ footer {
 .kontakt-formular button:hover {
     background-color: #659395;
 }
+
+img.gallery-image {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
