@@ -31,7 +31,7 @@
       <h2 lang="de">Kontakt</h2>
       <h2 lang="en" style="display:none;">Contact</h2>
 
-      <form id="contactForm" onsubmit="return validateForm()">
+      <form id="contactForm" action="https://formspree.io/f/xrbqddkk" onsubmit="return validateForm()" method="POST"
         <label for="name"><span lang="de">Name *</span><span lang="en" style="display:none;">Name *</span></label>
         <input type="text" id="name" name="name" required>
 
@@ -46,7 +46,7 @@
           <span lang="de">Ich stimme der Verarbeitung meiner Daten zu *</span>
           <span lang="en" style="display:none;">I agree to the processing of my data *</span>
         </label>
-
+        
         <button type="submit"><span lang="de">Senden</span><span lang="en" style="display:none;">Send</span></button>
       </form>
     </section>
