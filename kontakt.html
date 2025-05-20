@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontakt – Bilderei</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body oncontextmenu="return false;">
+  <header>
+    <h1>Bilderei</h1>
+    <nav>
+      <a href="index.html" class="nav-link" data-lang="de">Galerie</a>
+<a href="about.html" class="nav-link" data-lang="de">Über mich</a>
+<a href="blog.html" class="nav-link" data-lang="de">Blog</a>
+<a href="kontakt.html" class="nav-link" data-lang="de">Kontakt</a>
+
+<a href="index.html" class="nav-link" data-lang="en" style="display:none;">Gallery</a>
+<a href="about.html" class="nav-link" data-lang="en" style="display:none;">About</a>
+<a href="blog.html" class="nav-link" data-lang="en" style="display:none;">Blog</a>
+<a href="kontakt.html" class="nav-link" data-lang="en" style="display:none;">Contact</a>
+    </nav>
+    <div class="language-toggle">
+      <button onclick="toggleLanguage()">Deutsch / English</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="kontakt-formular">
+      <h2 lang="de">Kontakt</h2>
+      <h2 lang="en" style="display:none;">Contact</h2>
+
+      <form id="contactForm" onsubmit="return validateForm()">
+        <label for="name"><span lang="de">Name *</span><span lang="en" style="display:none;">Name *</span></label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email"><span lang="de">E-Mail *</span><span lang="en" style="display:none;">Email *</span></label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message"><span lang="de">Nachricht</span><span lang="en" style="display:none;">Message</span></label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <label>
+          <input type="checkbox" required>
+          <span lang="de">Ich stimme der Verarbeitung meiner Daten zu *</span>
+          <span lang="en" style="display:none;">I agree to the processing of my data *</span>
+        </label>
+
+        <button type="submit"><span lang="de">Senden</span><span lang="en" style="display:none;">Send</span></button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bilderei</p>
+  </footer>
+</body>
+</html>

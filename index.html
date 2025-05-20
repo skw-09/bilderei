@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilderei</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer></script>
+</head>
+<body oncontextmenu="return false;">
+    <header>
+        <h1>Bilderei</h1>
+        <nav>
+            <a href="index.html" class="nav-link" data-lang="de">Galerie</a>
+<a href="about.html" class="nav-link" data-lang="de">Über mich</a>
+<a href="blog.html" class="nav-link" data-lang="de">Blog</a>
+<a href="kontakt.html" class="nav-link" data-lang="de">Kontakt</a>
+
+<a href="index.html" class="nav-link" data-lang="en" style="display:none;">Gallery</a>
+<a href="about.html" class="nav-link" data-lang="en" style="display:none;">About</a>
+<a href="blog.html" class="nav-link" data-lang="en" style="display:none;">Blog</a>
+<a href="kontakt.html" class="nav-link" data-lang="en" style="display:none;">Contact</a>
+        </nav>
+        <div class="language-toggle">
+            <button onclick="toggleLanguage()">Deutsch / English</button>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <p lang="de">Willkommen auf meiner Fotoseite. Ich zeige hier eine Auswahl meiner Arbeiten in den Bereichen Landschaft, Street und Wildlife.</p>
+            <p lang="en" style="display:none;">Welcome to my photography site. Here I showcase a selection of my work in landscape, street, and wildlife photography.</p>
+        </section>
+        <section id="gallery">
+            <a href="images/landschaft.jpg" data-lightbox="gallery" data-title="Landschaft">
+                <img src="images/landschaft.jpg" alt="Landschaft">
+                <div class="caption">Landschaft</div>
+            </a>
+            <a href="images/street.jpg" data-lightbox="gallery" data-title="Street">
+                <img src="images/street.jpg" alt="Street">
+                <div class="caption">Street</div>
+            </a>
+            <a href="images/wildlife.jpg" data-lightbox="gallery" data-title="Wildlife">
+                <img src="images/wildlife.jpg" alt="Wildlife">
+                <div class="caption">Wildlife</div>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bilderei</p>
+    </footer>
+</body>
+</html>

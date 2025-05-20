@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog – Bilderei</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body oncontextmenu="return false;">
+  <header>
+    <h1>Bilderei</h1>
+    <nav>
+      <a href="index.html" class="nav-link" data-lang="de">Galerie</a>
+<a href="about.html" class="nav-link" data-lang="de">Über mich</a>
+<a href="blog.html" class="nav-link" data-lang="de">Blog</a>
+<a href="kontakt.html" class="nav-link" data-lang="de">Kontakt</a>
+
+<a href="index.html" class="nav-link" data-lang="en" style="display:none;">Gallery</a>
+<a href="about.html" class="nav-link" data-lang="en" style="display:none;">About</a>
+<a href="blog.html" class="nav-link" data-lang="en" style="display:none;">Blog</a>
+<a href="kontakt.html" class="nav-link" data-lang="en" style="display:none;">Contact</a>
+    </nav>
+    <div class="language-toggle">
+      <button onclick="toggleLanguage()">Deutsch / English</button>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2 lang="de">Blog</h2>
+      <h2 lang="en" style="display:none;">Blog</h2>
+      <p lang="de">Hier erscheinen in Zukunft Blogeinträge.</p>
+      <p lang="en" style="display:none;">Blog posts will appear here in the future.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bilderei</p>
+  </footer>
+</body>
+</html>

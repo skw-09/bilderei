@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Über mich - Bilderei</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body oncontextmenu="return false;">
+    <header>
+        <h1>Bilderei</h1>
+        <nav>
+            <a href="index.html" class="nav-link" data-lang="de">Galerie</a>
+<a href="about.html" class="nav-link" data-lang="de">Über mich</a>
+<a href="blog.html" class="nav-link" data-lang="de">Blog</a>
+<a href="kontakt.html" class="nav-link" data-lang="de">Kontakt</a>
+
+<a href="index.html" class="nav-link" data-lang="en" style="display:none;">Gallery</a>
+<a href="about.html" class="nav-link" data-lang="en" style="display:none;">About</a>
+<a href="blog.html" class="nav-link" data-lang="en" style="display:none;">Blog</a>
+<a href="kontakt.html" class="nav-link" data-lang="en" style="display:none;">Contact</a>
+        </nav>
+        <div class="language-toggle">
+            <button onclick="toggleLanguage()">Deutsch / English</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-container">
+            <div class="about-text">
+                <p lang="de">Ich bin Andreas Meyer, ein leidenschaftlicher Fotograf mit einem besonderen Blick für Landschaften, Straßenmomente und Wildtiere.</p>
+                <p lang="en" style="display: none;">I'm Andreas Meyer, a passionate photographer with a special focus on landscapes, street moments, and wildlife.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/portrait.jpg" alt="Andreas Meyer" />
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bilderei</p>
+    </footer>
+</body>
+</html>

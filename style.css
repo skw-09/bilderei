@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f6f2;
+    color: #333;
+    text-align: center;
+}
+header {
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #7fb0b2;
+}
+nav {
+    margin-bottom: 1rem;
+}
+nav a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #7fb0b2;
+    font-weight: bold;
+}
+.language-toggle button {
+    padding: 0.5rem 1rem;
+    background-color: #7fb0b2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+main {
+    padding: 2rem;
+}
+#gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+#gallery a {
+    position: relative;
+    width: 30%;
+    transition: transform 0.3s;
+}
+#gallery img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    user-select: none;
+    pointer-events: none;
+    border-radius: 8px;
+}
+#gallery a:hover {
+    transform: scale(1.03);
+}
+.caption {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: #7fb0b2;
+    color: white;
+}
+@media (max-width: 768px) {
+    #gallery a {
+        width: 90%;
+    }
+}
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1 1 300px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.about-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.kontakt-formular {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+}
+.kontakt-formular form {
+    display: flex;
+    flex-direction: column;
+}
+.kontakt-formular label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.kontakt-formular input,
+.kontakt-formular textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.kontakt-formular button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #7fb0b2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.kontakt-formular button:hover {
+    background-color: #659395;
+}
